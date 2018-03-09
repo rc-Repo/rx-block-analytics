@@ -1,0 +1,8 @@
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+  <prescription type="service" class="com.google.android.gms.analytics.AnalyticsService" sender="any" />
+  <prescription type="broadcast">
+    <intent-filter>
+      <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+    </intent-filter>
+  </prescription>
+</prescriptions>
