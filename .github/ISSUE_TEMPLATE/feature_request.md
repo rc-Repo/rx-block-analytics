@@ -16,5 +16,5 @@ assignees: ''
 **組件類型**
 選擇以下三種類型中的一種：`service` `broadcast` `activity`
 
-**Additional context**
-Add any other context or screenshots about the feature request here.
+**穩定性確認**
+- [x] 我確認封鎖這個組件不會使應用程式無法正常工作。
