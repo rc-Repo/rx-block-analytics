@@ -1,0 +1,22 @@
+<prescriptions xmlns="http://greenify.github.io/schemas/prescription/v3">
+  <prescription type="activity" class="net.hockeyapp.android.LoginActivity" sender="any" />
+  <prescription type="activity" class="net.hockeyapp.android.PaintActivity" sender="any" />
+  <prescription type="activity" class="net.hockeyapp.android.UpdateActivity" sender="any" />
+  <prescription type="activity" class="net.hockeyapp.android.FeedbackActivity" sender="any" />
+  <prescription type="activity" class="net.hockeyapp.android.ExpiryInfoActivity" sender="any" />
+  <prescription type="service" class="com.google.android.gms.analytics.AnalyticsService" sender="any" />
+  <prescription type="broadcast">
+    <intent-filter>
+      <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+    </intent-filter>
+    <intent-filter>
+      <action name="com.google.android.gms.analytics.AnalyticsReceiver" />
+    </intent-filter>
+    <intent-filter>
+      <action name="com.google.android.gms.measurement.AppMeasurementReceiver" />
+    </intent-filter>
+    <intent-filter>
+      <action name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" />
+    </intent-filter>
+  </prescription>
+</prescriptions>
