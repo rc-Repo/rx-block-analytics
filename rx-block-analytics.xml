@@ -4,7 +4,10 @@
   <prescription type="activity" class="net.hockeyapp.android.UpdateActivity" sender="any" />
   <prescription type="activity" class="net.hockeyapp.android.FeedbackActivity" sender="any" />
   <prescription type="activity" class="net.hockeyapp.android.ExpiryInfoActivity" sender="any" />
+  <prescription type="activity" class="com.facebook.js.componentscriptframework.navigation.CSAnalyticsActivity" sender="any" />
+  <prescription type="activity" class="com.facebook.js.componentscript.frameworknavigation.CSAnalyticsActivityWithExtraData" sender="any" />
   <prescription type="service" class="com.google.android.gms.analytics.AnalyticsService" sender="any" />
+  <prescription type="service" class="com.digibites.telemetry.http.TelemetryUploadTaskService" sender="any" />
   <prescription type="broadcast">
     <intent-filter>
       <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
@@ -17,6 +20,9 @@
     </intent-filter>
     <intent-filter>
       <action name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" />
+    </intent-filter>
+    <intent-filter>
+      <action name="com.crashlytics.android.CrashlyticsInitProvider" />
     </intent-filter>
   </prescription>
 </prescriptions>
