@@ -4,25 +4,29 @@
   <prescription type="activity" class="net.hockeyapp.android.UpdateActivity" sender="any" />
   <prescription type="activity" class="net.hockeyapp.android.FeedbackActivity" sender="any" />
   <prescription type="activity" class="net.hockeyapp.android.ExpiryInfoActivity" sender="any" />
+  <prescription type="activity" class="com.facebook.analytics.reporters.AppStateFADFeedbackActivity" sender="any" />
   <prescription type="activity" class="com.facebook.js.componentscriptframework.navigation.CSAnalyticsActivity" sender="any" />
   <prescription type="activity" class="com.facebook.js.componentscript.frameworknavigation.CSAnalyticsActivityWithExtraData" sender="any" />
+  <prescription type="service" class="com.google.android.gms.measurement.AppMeasurementService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.measurement.AppMeasurementJobService" sender="any" />
   <prescription type="service" class="com.google.android.gms.analytics.AnalyticsService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.analytics.AnalyticsJobService" sender="any" />
+  <prescription type="service" class="com.facebook.analytics2.logger.LollipopUploadService" sender="any" />
+  <prescription type="service" class="com.facebook.analytics2.logger.GooglePlayUploadService" sender="any" />
+  <prescription type="service" class="com.facebook.analytics2.logger.AlarmBasedUploadService" sender="any" />
+  <prescription type="service" class="com.facebook.analytics.appstatelogger.AppStateIntentService" sender="any" />
+  <prescription type="service" class="com.facebook.analytics.appstatelogger.AppStateDeathMonitorService" sender="any" />
+  <prescription type="service" class="com.bytedance.crash.upload.CrashUploadService" sender="any" />
+  <prescription type="service" class="com.mapbox.android.telemetry.TelemetryService" sender="any" />
   <prescription type="service" class="com.digibites.telemetry.http.TelemetryUploadTaskService" sender="any" />
   <prescription type="broadcast">
     <intent-filter>
-      <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
-    </intent-filter>
-    <intent-filter>
-      <action name="com.google.android.gms.analytics.AnalyticsReceiver" />
-    </intent-filter>
-    <intent-filter>
-      <action name="com.google.android.gms.measurement.AppMeasurementReceiver" />
-    </intent-filter>
-    <intent-filter>
-      <action name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" />
-    </intent-filter>
-    <intent-filter>
       <action name="com.crashlytics.android.CrashlyticsInitProvider" />
+      <action name="com.google.android.gms.analytics.AnalyticsReceiver" />
+      <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
+      <action name="com.google.android.gms.measurement.AppMeasurementReceiver" />
+      <action name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" />
+      <action name="com.facebook.analytics.appstatelogger.AppStateBroadcastReceiver" />
     </intent-filter>
   </prescription>
 </prescriptions>
