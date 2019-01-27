@@ -19,8 +19,10 @@
   <prescription type="service" class="com.bytedance.crash.upload.CrashUploadService" sender="any" />
   <prescription type="service" class="com.mapbox.android.telemetry.TelemetryService" sender="any" />
   <prescription type="service" class="com.digibites.telemetry.http.TelemetryUploadTaskService" sender="any" />
+  <prescription type="service" class="org.mozilla.gecko.telemetry.TelemetryUploadService" sender="any" />
   <prescription type="broadcast">
     <intent-filter>
+      <action name="com.adjust.sdk.AdjustReferrerReceiver" />
       <action name="com.crashlytics.android.CrashlyticsInitProvider" />
       <action name="com.google.android.gms.analytics.AnalyticsReceiver" />
       <action name="com.google.android.gms.analytics.ANALYTICS_DISPATCH" />
