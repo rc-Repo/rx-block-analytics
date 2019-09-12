@@ -13,6 +13,10 @@
   <prescription type="service" class="com.google.android.gms.measurement.AppMeasurementJobService" sender="any" />
   <prescription type="service" class="com.google.android.gms.analytics.AnalyticsService" sender="any" />
   <prescription type="service" class="com.google.android.gms.analytics.AnalyticsJobService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.measurement.service.MeasurementBrokerService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.measurement.PackageMeasurementService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.measurement.PackageMeasurementTaskService" sender="any" />
+  <prescription type="service" class="com.google.android.gms.analytics.internal.PlayLogReportingService" sender="any" />
   <prescription type="service" class="com.facebook.analytics2.logger.LollipopUploadService" sender="any" />
   <prescription type="service" class="com.facebook.analytics2.logger.GooglePlayUploadService" sender="any" />
   <prescription type="service" class="com.facebook.analytics2.logger.AlarmBasedUploadService" sender="any" />
@@ -22,6 +26,8 @@
   <prescription type="service" class="com.mapbox.android.telemetry.TelemetryService" sender="any" />
   <prescription type="service" class="com.digibites.telemetry.http.TelemetryUploadTaskService" sender="any" />
   <prescription type="service" class="org.mozilla.gecko.telemetry.TelemetryUploadService" sender="any" />
+  <prescription type="service" class="com.touchtype.telemetry.TelemetryJobIntentService" sender="any" />
+  <prescription type="service" class="com.touchtype.telemetry.TelemetryService" sender="any" />
   <prescription type="broadcast">
     <intent-filter>
       <action name="com.adjust.sdk.AdjustReferrerReceiver" />
@@ -32,6 +38,10 @@
       <action name="com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver" />
       <action name="com.facebook.analytics.appstatelogger.AppStateBroadcastReceiver" />
       <action name="com.instagram.common.analytics.AnalyticsUploadAlarmReceiver" />
+      <action name="com.touchtype.telemetry.TelemetryExposeReceiver" />
+      <action name="com.touchtype.telemetry.TelemetryExposeReceiver$TelemetryExposeDoneReceiver" />
+      <action name="com.touchtype.UserStatsScheduledJob" />
+      <action name="com.touchtype.SimStateReceiver" />
     </intent-filter>
   </prescription>
 </prescriptions>
